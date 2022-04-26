@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>05
+              Funções com parâmetros</h1>
+<details><button>Já simplificando a maneira de pular linhas Criando <b>pulaLinha()</b>. <br>
+Será que é possivel fazermos o mesmo com o <b>document.write()?  <br>
+Quando queremos exibir algo para o usuário, sempre temos que escrevê-lo <br>
+incluindo também a menssagem entre parênteses como em:</b> </button> </details>
+
+document.write("Olá pessoal!");
+
+<details><button>É uma sintaxe extensa. Em vez de escrevermos tudo isso, criaremos uma função chamada <b>mostra()</b>. <br>
+Quem mostra, mostra algo, portanto esta função receberá uma mensagem como parâmetro, em vez de nenhum. <br>
+Se compararmos as instruções:</button></details>
+
+document.write("Olá pessoal!");
+
+mostra("Olá pessoal");
+<br>
+
+<h2>Quando um terceiro olhar nosso código, ao ver mostra(), <br>
+saberá que seu propósito é exibir algo na tela.</h2>
+
+<details>
+<button>Vemos que a segunda, além de mais sucinta, fica explícita nossa intenção de mostrar algo. <br>
+Quando um terceiro olhar nosso código, ao ver mostra(), <br>
+saberá que seu propósito é exibir algo na tela.</button> </details> <br>
+
+<details>  <button>  E como criamos a função mostra()? <br>
+              Primeiro colocaremos alguns trechos em comentários, por meio de barras duplas (//). <br>
+              O programa ignorará a referida linha, que continuará presente para fins didáticos, para lembrarmos o que havia antes.</button></details>
+
+              <meta charset="UTF-8">
+
+              <script>
+
+                  function pulaLinha() {
+
+                      document.write("<br>");
+                      document.write("<br>");
+
+              }
+
+              var ano = 2016;
+
+              // document.write("Flávio tem " + (ano - 1977) + " anos");
+
+              pulaLinha();
+
+              // document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+              pulaLinha();
+
+              ano = 2017;
+
+              // document.write("Barney tem " + (ano - 1976) + " anos");
+              // document.write("Olá pessoal!");
+
+              </script>
+
+              No lugar de document.write() queremos utilizar mostra():
+
+
+
+</body>
+</html>
