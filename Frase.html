@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+
+ <p>Aprendemos a criar uma função, mas desta vez estamos criando uma que recebe um parâmetro. <br> Se quisermos que a função receba algo, precisaremos indicar isto incluindo um nome.  <br> Nós escolhemos <b>ronaldo,</b> mas para que fique mais claro, mudaremos para <b> frase: </b> </p>
+<br>
+Ao chamar a função mostra(), o JavaScript pegará o resultado da concatenação e interpretará como se frase fosse igual a isto. <br> Por exemplo:
+<br>
+<script>
+
+
+function mostra(frase) {
+
+document.write(frase);
+
+}
+
+mostra("Olá pessoal!");
+</script>
+<br>
+
+
+<button>Para o JavaScript,  <b>frase </b>será igual a <b> Olá pessoal!,</b> e com isso conseguimos passar parâmetros para uma função. <br> Será que é possível simplificar ainda mais nosso código?  <br> Toda vez que imprimimos uma frase, queremos pular uma linha:</button>
+
+<script>
+              function pulaLinha() {
+
+              document.write("<br>");
+              document.write("<br>");
+                  }
+
+              function mostra(frase ){
+
+              document.write(frase);
+                  }
+
+              mostra("Olá pessoal!");
+
+              var ano = 2016;
+
+              mostra("Flávio tem " + (ano - 1977) + " anos");
+
+              pulaLinha();
+
+              mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+              pulaLinha();
+
+              ano = 2017;
+
+              mostra("Barney tem " + (ano - 1976) + " anos");
+
+          </script>
+          <br>
+
+<a href="proximalinha.html">Pela ultima linha</a>
